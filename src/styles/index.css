@@ -1,11 +1,85 @@
-/* 
+body {
+  background-color: #222;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-*/
+.weapon-selection {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.choose-weapon h3 {
+  margin-top: 20px;
+}
+
+.inputs {
+  margin: 20px 0;
+}
+
+.inputs input {
+  margin: 5px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.armas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arma {
+  background-color: #555;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.arma:hover {
+  background-color: #777;
+}
+
+.game-board {
+  margin-top: 30px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background-color: #666;
+}
